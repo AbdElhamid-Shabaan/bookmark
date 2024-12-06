@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assiment 10 -JS-</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <!-- main style -->
+    <link rel="stylesheet" href="CSS/main.css" />
+    <!-- media -->
+    <link rel="stylesheet" href="media/media.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="main-content p-0 h-100">
+            <div
+              class="title h-100 my-5 text-center d-flex align-items-center justify-content-center p-3"
+            >
+              <h1>Bookmarker</h1>
+            </div>
+            <div class="content mx-3">
+              <div
+                class="bookmark d-flex align-items-center justify-content-center"
+              >
+                <h2 class="text-center p-2 pt-3">
+                  <i class="fa-solid fa-bookmark fa-lg"></i>
+                  Bookmark your favorite sites
+                  <i class="fa-solid fa-bookmark fa-lg"></i>
+                </h2>
+              </div>
+              <div class="form-group d-flex flex-column">
+                <label for="name"
+                  ><i class="fa-solid fa-book-bookmark pe-2"></i> Site
+                  Name</label
+                >
+                <input type="text" id="name" placeholder="Bookmark Name" />
+                <p id="nameEx" class="text-danger d-none">
+                  The name is already exists
+                </p>
+                <label for="url" class="mt-4">
+                  <i class="fa-solid fa-link pe-2"></i>
+                  Site URL</label
+                >
+
+                <input type="text" id="url" placeholder="Website URL" />
+                <p id="msAlert" class="text-danger d-none">
+                  You need to include http:// or https:// and include the "www."
+                  prefix.
+                </p>
+                <div class="submit-btn-container text-center p-4">
+                  <button onclick="addClint()">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="user-info" class="user-info bg-body-tertiary">
+          <div class="row g-0 mt-4">
+            <div
+              class="info w-100 d-flex border-bottom border-2 text-center p-2 fw-bold"
+            >
+              <div class="col-3">
+                <span>Index</span>
+              </div>
+              <div class="col-3">
+                <span>Website Name</span>
+              </div>
+              <div class="col-3">
+                <span>Visit</span>
+              </div>
+              <div class="col-3">
+                <span>Delete</span>
+              </div>
+            </div>
+            <div id="result" class="resul">
+              <!-- <div class="row text-center d-flex p-2">
+                  <div class="col-3 d-flex">
+                  <span class="align-self-center mx-auto">1</span>
+                </div>
+                <div class="col-3 d-flex">
+                  <span class=" align-self-center">Ahmed Mady</span>
+                </div>
+                <div class="col-3">
+                  <a class="visit-btn" href="https://getbootstrap.com/">
+                    <i class="fa-solid fa-eye"></i>
+                    Visit
+                  </a>
+                </div>
+                <div class="col-3">
+                  <button class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                    Delete
+                  </button>
+                </div>
+                </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
